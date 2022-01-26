@@ -1,6 +1,9 @@
-brew install minikube
+
+```
+brew install helm minikube
 minikube start --memory 8192 --cpus 2
 minikube dashboard
 kubectl apply -f persistent-volumes.yml
 terraform init
-terraform apply
+terraform apply 
+```
