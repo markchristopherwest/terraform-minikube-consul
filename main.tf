@@ -10,8 +10,7 @@ resource "helm_release" "consul-k8s" {
   repository = "https://helm.releases.hashicorp.com/"
   chart      = "consul"
 
-#   set {
-#     name  = "service.type"
-#     value = "ClusterIP"
-#   }
+#   values = [
+#     "${file("54.yaml")}"
+#   ]
 }
